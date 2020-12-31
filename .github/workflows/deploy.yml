@@ -1,0 +1,19 @@
+name: Create Webp
+
+on:
+  push:
+    branches:
+      - master  # Set a branch to deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: Compress
+        id: Compress
+        uses: zhixuan666/Compress-Picture-Action@v0.0.1
+        with:
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
