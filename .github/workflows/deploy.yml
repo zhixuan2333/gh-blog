@@ -15,3 +15,13 @@ jobs:
       - name: Compress
         id: Compress
         uses: zhixuan666/Compress-Picture-Action@master
+
+      - uses: EndBug/add-and-commit@v6 # You can change this to use a specific version
+        with:
+          # The message for the commit
+          # Default: 'Commit from GitHub Actions (name of the workflow)'
+          message: 'Create by zhixuan666/Compress-Picture-Action'
+
+          # Token to use for pushing the commit. The default value won't trigger any workflows, you need to use a Personal Access Token for that.
+          # Default: secrets.GITHUB_TOKEN
+          token: ${{ secrets.GITHUB_TOKEN }}
