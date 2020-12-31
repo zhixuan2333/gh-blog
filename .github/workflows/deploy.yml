@@ -14,4 +14,4 @@ jobs:
 
       - name: Compress
         id: Compress
-        uses: zhixuan666/Compress-Picture-Action@v0.0.2
+        uses: zhixuan666/Compress-Picture-Action@master
