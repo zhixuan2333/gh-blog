@@ -1,7 +1,0 @@
-{
-    "schedule": "monthly", // daily|weekly|monthly
-    "ignoredFiles": [
-    	"css/*",
-    	"js/*",
-    ]
-}
